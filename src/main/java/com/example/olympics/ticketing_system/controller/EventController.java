@@ -17,7 +17,7 @@ public class EventController {
     private EventService eventService;
 
     @Operation(summary = "Ajouter un nouvel événement")
-    @PostMapping
+    @PostMapping("/add")
     public Event addEvent(@RequestBody Event event) {
         return eventService.addEvent(event);
     }

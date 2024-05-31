@@ -19,7 +19,7 @@ public class TicketController {
     private TicketService ticketService;
 
     @Operation(summary = "Ajouter un ticket")
-    @PostMapping
+    @PostMapping("/add")
     public Ticket addTicket(@RequestBody Ticket ticket) {
         return ticketService.addTicket(ticket);
     }
