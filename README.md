@@ -21,13 +21,13 @@ Cette API fournit plusieurs endpoints pour gérer les utilisateurs, les billets,
 
 - **Utilisateurs**
     - `GET /api/users/{id}`: Obtenir un utilisateur par son ID.
-    - `POST /api/users`: Ajouter un nouvel utilisateur.
+    - `POST /api/users/add`: Ajouter un nouvel utilisateur.
     - `PUT /api/users/{id}`: Mettre à jour un utilisateur existant.
     - `DELETE /api/users/{id}`: Supprimer un utilisateur.
 
 - **Billets**
     - `GET /api/tickets/{id}`: Obtenir un billet par son ID.
-    - `POST /api/tickets`: Ajouter un nouveau billet.
+    - `POST /api/tickets/add`: Ajouter un nouveau billet.
     - `PUT /api/tickets/{id}`: Mettre à jour un billet existant.
     - `DELETE /api/tickets/{id}`: Supprimer un billet.
 
@@ -39,7 +39,7 @@ Cette API fournit plusieurs endpoints pour gérer les utilisateurs, les billets,
 
 - **Événements**
     - `GET /api/events/{id}`: Obtenir un événement par son ID.
-    - `POST /api/events`: Ajouter un nouvel événement.
+    - `POST /api/events/add`: Ajouter un nouvel événement.
     - `PUT /api/events/{id}`: Mettre à jour un événement existant.
     - `DELETE /api/events/{id}`: Supprimer un événement.
 
