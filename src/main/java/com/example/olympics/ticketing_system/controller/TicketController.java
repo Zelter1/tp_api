@@ -36,9 +36,9 @@ public class TicketController {
 
     @GetMapping("/{id}")
     public Ticket getTicketById(@PathVariable Long id) {
-    Optional<Ticket> ticketOptional = ticketService.getTicketById(id);
-    return ticketOptional.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Ticket not found with id " + id));
-}
+        Optional<Ticket> ticketOptional = ticketService.getTicketById(id);
+        return ticketOptional.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Ticket not found with id " + id));
+    }
 
     @PutMapping("/{id}")
     public Ticket updateTicket(@PathVariable Long id, @RequestBody Ticket ticket) {

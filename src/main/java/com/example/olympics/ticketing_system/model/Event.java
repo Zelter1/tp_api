@@ -29,12 +29,11 @@ public class Event {
     private LocalDateTime date;
    
     @Column(name = "open")
-    private boolean openn;
+    private boolean open;
 
     @ManyToOne
     @JoinColumn(name = "stadium_id")
     private Stadium stadium;
-
 
     @OneToMany(mappedBy = "event")
     private Set<Ticket> tickets;
